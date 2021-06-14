@@ -1,0 +1,9 @@
+<% if model.errors.any? %>
+  <div id="error_explanation">
+      <% model.errors.full_messages.each do |message| %>
+      <h2><%= @book.errors.count %> error prohibited this book from being saved:</h2>
+        <ul><li><%= message %></li></ul>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
